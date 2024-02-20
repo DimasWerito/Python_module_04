@@ -1,1 +1,5 @@
 # Python_module_04
+
+
+ChatCompletionMessage(content='Звучить як цікаве завдання! Ось функція real_len, яка реалізує зазначену функціональність у Python:\n\n```python\ndef real_len(input_string):\n    invalid_chars = [\'\\n\', \'\\f\', \'\\r\', \'\\t\', \'\\v\']\n    filtered_string = \'\'.join(char for char in input_string if char not in invalid_chars)\n    length = len(filtered_string)\n    return length\n\n# Приклад використання:\ninput_string = "Це\\nприклад\\fтексту\\rз\\nнекоректним\\tформатуванням\\v"\nlength_without_invalid_chars = real_len(input_string)\nprint(length_without_invalid_chars)  # Виведе: 33\n```\n\nВ цій функції ми спочатку створюємо список недозволених символів `invalid_chars`, після чого ми фільтруємо вхідний рядок видаляючи усі 
+символи, які присутні у `invalid_chars`. Нарешті, ми повертаємо довжину отриманого "очищеного" рядка. Надіюсь, ця функція буде корисною для вас! Якщо у вас є інші питання або задачі, не соромтесь питати!', role='assistant', function_call=None, tool_calls=None)
